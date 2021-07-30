@@ -102,10 +102,3 @@ clear.addEventListener('click', function (){
     location.reload();
 })
 
-// function ready() {
-    
-
-
-//   }
-
-//   document.addEventListener("DOMContentLoaded", ready);
