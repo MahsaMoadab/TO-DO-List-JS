@@ -1,0 +1,191 @@
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(139, 139, 139, 0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ container ------------ */
+.container{
+    /* padding:10px; */
+    width:380px;
+    margin:0 auto;
+    margin-top: 50px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.075), 0 15px 12px rgba(0, 0, 0, 0.068);
+    border-radius: 15px 15px 20px 20px;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../img/bg.jpg');
+    background-size: 380px 200px;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    width:380px;
+    height: 310px;
+    padding:0;
+    margin:0;
+    overflow: auto;
+}
+
+/* custom scrollbar */
+ul::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  ul::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ul::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ul::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:10px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 16px;
+    left:45px;
+    background-color: #FFF;
+    max-width:280px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #999999;
+}
+.item i.delete{
+    position: absolute;
+    font-size: 25px;
+    right:20px;
+    top:10px;
+}
+.item i.delete:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    position: absolute;
+    width: 360px;
+    height:40px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(10, 9, 9, 0.1);
+    border-radius: 15px 15px 20px 20px;
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
